@@ -26,9 +26,3 @@ app.post("/chat", async (req, res) => {
 
 app.listen(3000, () => console.log("Server running on http://localhost:3000"));
 
-// app.get("/", (req, res) => {
-// 	res.send(`
-//       <h1>Gemini Chat API</h1>
-//       <p>Use <code>/chat</code> endpoint with POST requests to interact with Gemini.</p>
-//    `);
-// });
