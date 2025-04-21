@@ -1,4 +1,3 @@
-// Event listeners
 document.addEventListener("keydown", function (event) {
 	if (event.key === "Enter") {
 		sendMessage();
@@ -8,8 +7,6 @@ document.addEventListener("keydown", function (event) {
 document.getElementById("sendButton").addEventListener("click", function () {
 	sendMessage();
 });
-
-//
 
 async function sendMessage() {
 	const chat = document.getElementById("chat");
@@ -36,7 +33,10 @@ async function sendMessage() {
 function createMessage(response, is) {
 	if (!response) {
 		document.getElementById("input").disabled = true;
+		document.getElementById("input").classList.add("disabled");
 		document.getElementById("sendButton").disabled = true;
+		document.getElementById("sendButton").classList.add("disabled");
+		document.querySelector(".dimlight").classList.add("true");
 	}
 
 	const message = document.createElement("div");
@@ -44,6 +44,9 @@ function createMessage(response, is) {
 	message.textContent = response
 		? response
 		: "You've used up your free daily quota for this model.";
+
+	const chatBox = document.getElementById("chat");
+	chatBox.scrollTop = chatBox.scrollHeight;
 
 	return message;
 }

@@ -1,22 +1,23 @@
 {
-  "name": "chat",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "Front-End-Chat"
-  },
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "@google/generative-ai": "^0.24.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.5.0",
-    "express": "^5.1.0"
-  }
+	"name": "chat",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "node server.js",
+		"build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "Front-End-Chat"
+	},
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"@google/generative-ai": "^0.24.0",
+		"cors": "^2.8.5",
+		"dotenv": "^16.5.0",
+		"express": "^5.1.0"
+	}
 }

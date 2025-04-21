@@ -1,0 +1,20 @@
+:root {
+	--white-color: white;
+	--black-color: black;
+
+	--box-shadow: 0 4px 8px rgb(255, 15, 15);
+	--box-shadow-inset: 0 4px 8px rgb(255, 15, 15) inset;
+	--box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+	--primary-color: #271a33;
+	--secondary-color: #9c4ad5;
+	--tertiary-color: #f8f2f9;
+
+	--quaternary-color: #4b4b4b;
+
+	--input-button-radius: 20px;
+	--input-button-radius-right: 0 var(--input-button-radius)
+		var(--input-button-radius) 0;
+	--input-button-radius-left: var(--input-button-radius) 0 0
+		var(--input-button-radius);
+}
